@@ -1,0 +1,270 @@
+{
+  "observationTemplates": [
+    {
+      "id": "template-1",
+      "name": "Excellent Performance (80-100%)",
+      "scoreRange": [80, 100],
+      "feedback": "Exceptional teaching performance observed. {teacherName} demonstrated strong pedagogical skills with high student engagement throughout the lesson.",
+      "strengths": [
+        "Excellent classroom management",
+        "Clear learning objectives",
+        "Effective use of formative assessment",
+        "Strong student-teacher interaction"
+      ],
+      "recommendations": [
+        "Continue current teaching practices",
+        "Consider mentoring other teachers",
+        "Share best practices in staff meetings",
+        "Document successful strategies for school resource library"
+      ]
+    },
+    {
+      "id": "template-2",
+      "name": "Good Performance (60-79%)",
+      "scoreRange": [60, 79],
+      "feedback": "Good teaching performance with room for improvement. {teacherName} showed competence in core teaching areas and maintained positive classroom environment.",
+      "strengths": [
+        "Good subject knowledge",
+        "Adequate lesson planning",
+        "Positive classroom atmosphere"
+      ],
+      "recommendations": [
+        "Incorporate more interactive activities",
+        "Use differentiated instruction strategies",
+        "Increase formative assessment frequency",
+        "Attend professional development on student engagement"
+      ]
+    },
+    {
+      "id": "template-3",
+      "name": "Needs Improvement (Below 60%)",
+      "scoreRange": [0, 59],
+      "feedback": "Teaching performance needs significant improvement. {teacherName} should focus on developing core pedagogical skills and classroom management techniques.",
+      "strengths": [
+        "Shows willingness to improve",
+        "Present and prepared for class"
+      ],
+      "recommendations": [
+        "Attend professional development workshops on classroom management",
+        "Observe experienced teachers' lessons",
+        "Work closely with instructional coach",
+        "Focus on clear learning objectives and lesson structure",
+        "Schedule follow-up observation in 4 weeks"
+      ]
+    }
+  ],
+  "indicators": [
+    {
+      "id": "ind-1",
+      "name": "Student Engagement",
+      "description": "Students actively participate, remain focused, and show interest in the lesson",
+      "maxScore": 10
+    },
+    {
+      "id": "ind-2",
+      "name": "Instructional Clarity",
+      "description": "Clear explanations, appropriate examples, and well-defined learning objectives",
+      "maxScore": 10
+    },
+    {
+      "id": "ind-3",
+      "name": "Assessment Integration",
+      "description": "Effective use of formative assessment techniques and checking for understanding",
+      "maxScore": 10
+    },
+    {
+      "id": "ind-4",
+      "name": "Classroom Management",
+      "description": "Effective classroom routines, behavior management, and use of instructional time",
+      "maxScore": 10
+    },
+    {
+      "id": "ind-5",
+      "name": "Content Knowledge",
+      "description": "Strong subject matter expertise, accuracy, and ability to answer student questions",
+      "maxScore": 10
+    }
+  ],
+  "studentFeedbackTemplates": {
+    "performanceTiers": [
+      {
+        "id": "excellent",
+        "name": "Excellent Performance",
+        "scoreRange": [90, 100],
+        "templates": [
+          {
+            "id": "excellent-1",
+            "message": "Outstanding work, {studentName}! You achieved {percentage}% on this {subject} assessment. Your strong understanding of the material really shows.",
+            "encouragement": "Keep up the excellent work! You're demonstrating mastery of these concepts.",
+            "nextSteps": [
+              "Challenge yourself with advanced topics in {subject}",
+              "Help classmates who might need support",
+              "Review areas where you can still improve to reach 100%"
+            ]
+          },
+          {
+            "id": "excellent-2",
+            "message": "Fantastic performance, {studentName}! Scoring {percentage}% shows your dedication to learning {subject}.",
+            "encouragement": "Your hard work is paying off! This is an impressive achievement.",
+            "nextSteps": [
+              "Explore enrichment materials for {subject}",
+              "Set new learning goals to maintain momentum",
+              "Consider becoming a peer tutor to reinforce your knowledge"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "good",
+        "name": "Good Performance",
+        "scoreRange": [80, 89],
+        "templates": [
+          {
+            "id": "good-1",
+            "message": "Great job, {studentName}! You scored {percentage}% on this {subject} assessment. You're showing solid understanding.",
+            "encouragement": "You're doing well! With a bit more practice, you'll reach mastery level.",
+            "nextSteps": [
+              "Review questions you found challenging",
+              "Practice similar problems to reinforce concepts",
+              "Ask your teacher about topics you'd like to understand better",
+              "Aim for 90%+ on your next assessment"
+            ]
+          },
+          {
+            "id": "good-2",
+            "message": "Well done, {studentName}! {percentage}% demonstrates good grasp of {subject} concepts.",
+            "encouragement": "You're on the right track! Keep building on this foundation.",
+            "nextSteps": [
+              "Focus on refining your understanding of key concepts",
+              "Complete extra practice exercises",
+              "Form a study group with classmates"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "satisfactory",
+        "name": "Satisfactory Performance",
+        "scoreRange": [70, 79],
+        "templates": [
+          {
+            "id": "satisfactory-1",
+            "message": "Good effort, {studentName}! You scored {percentage}% on this {subject} assessment. You're building understanding.",
+            "encouragement": "Keep practicing! You're making progress and can improve further.",
+            "nextSteps": [
+              "Spend extra time on concepts that were challenging",
+              "Use study guides and practice materials for {subject}",
+              "Consider forming a study group with classmates",
+              "Don't hesitate to ask questions in class",
+              "Review your notes regularly"
+            ]
+          },
+          {
+            "id": "satisfactory-2",
+            "message": "Thank you for your effort, {studentName}. Your {percentage}% shows you're working to understand {subject}.",
+            "encouragement": "With focused practice, you can reach the next level!",
+            "nextSteps": [
+              "Identify specific topics that need more attention",
+              "Break down complex problems into smaller steps",
+              "Practice regularly rather than cramming",
+              "Seek help from your teacher during office hours"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "needs-improvement",
+        "name": "Needs Improvement",
+        "scoreRange": [60, 69],
+        "templates": [
+          {
+            "id": "needs-improvement-1",
+            "message": "Thank you for completing this {subject} assessment, {studentName}. You scored {percentage}%, which shows you're working to understand the material.",
+            "encouragement": "Don't be discouraged! Everyone learns at their own pace, and improvement is possible.",
+            "nextSteps": [
+              "Schedule time with your teacher for extra help",
+              "Review your notes and correct your mistakes",
+              "Break down complex topics into smaller, manageable parts",
+              "Practice regularly with easier problems first",
+              "Watch for additional support resources from your teacher"
+            ]
+          },
+          {
+            "id": "needs-improvement-2",
+            "message": "{studentName}, you scored {percentage}% on this {subject} assessment. Let's focus on building a stronger foundation.",
+            "encouragement": "Learning takes time. With the right support and effort, you can improve.",
+            "nextSteps": [
+              "Meet with your teacher to discuss challenging areas",
+              "Use additional learning resources provided",
+              "Study with a partner who can help explain concepts",
+              "Complete all homework and practice exercises",
+              "Don't skip foundational topics - master the basics first"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "requires-support",
+        "name": "Requires Additional Support",
+        "scoreRange": [0, 59],
+        "templates": [
+          {
+            "id": "requires-support-1",
+            "message": "Thank you for your effort on this {subject} assessment, {studentName}. You scored {percentage}%. Let's work together to improve your understanding.",
+            "encouragement": "Remember, struggling with new material is part of learning. You can do this with the right support!",
+            "nextSteps": [
+              "Meet with your teacher as soon as possible for one-on-one help",
+              "Identify specific topics that need more attention",
+              "Use foundational review materials for {subject}",
+              "Consider tutoring or peer support sessions",
+              "Set small, achievable goals for improvement",
+              "Your teacher will provide additional resources and support",
+              "Practice basic concepts before moving to advanced topics"
+            ]
+          },
+          {
+            "id": "requires-support-2",
+            "message": "{studentName}, your {percentage}% score shows that you need additional support in {subject}. Don't worry - help is available.",
+            "encouragement": "Everyone can learn and improve. Let's create a plan together!",
+            "nextSteps": [
+              "Schedule regular sessions with your teacher or tutor",
+              "Start with reviewing foundational concepts",
+              "Use visual aids and hands-on materials when possible",
+              "Take notes during lessons and review them daily",
+              "Ask questions whenever you don't understand",
+              "Celebrate small victories along the way"
+            ]
+          }
+        ]
+      }
+    ],
+    "questionTypeAnalysis": {
+      "multipleChoice": {
+        "strength": "You showed strong skills in multiple-choice questions, demonstrating good recall and understanding",
+        "weakness": "Focus on reading each option carefully in multiple-choice questions and eliminating incorrect answers"
+      },
+      "trueFalse": {
+        "strength": "You demonstrated good reasoning on true-false questions, showing logical thinking skills",
+        "weakness": "Review concepts tested in true-false questions and pay attention to absolute words like 'always' or 'never'"
+      },
+      "shortAnswer": {
+        "strength": "You expressed yourself clearly in short-answer responses, showing good communication skills",
+        "weakness": "Work on providing complete, detailed answers for short-answer questions - include all parts of the question"
+      }
+    },
+    "subjectSpecificTips": {
+      "Mathematics": {
+        "general": "Remember to show your work step-by-step and double-check your calculations",
+        "lowScore": "Practice basic operations daily and review formulas regularly. Consider using math practice apps or websites."
+      },
+      "English": {
+        "general": "Keep reading regularly to improve comprehension and expand your vocabulary",
+        "lowScore": "Focus on vocabulary building and grammar fundamentals. Read for 20 minutes daily and write summaries."
+      },
+      "Urdu": {
+        "general": "Practice writing and speaking daily to build fluency and confidence",
+        "lowScore": "Review basic grammar rules and expand your vocabulary. Practice reading Urdu texts aloud daily."
+      }
+    }
+  }
+}

@@ -1,0 +1,2588 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Sarah Ahmed",
+      "email": "sarah.ahmed@edu.example.com",
+      "role": "teacher",
+      "schoolId": "school-1"
+    },
+    {
+      "id": "user-2",
+      "name": "Ali Khan",
+      "email": "ali.khan@edu.example.com",
+      "role": "admin"
+    },
+    {
+      "id": "user-3",
+      "name": "Fatima Hassan",
+      "email": "fatima.hassan@edu.example.com",
+      "role": "teacher",
+      "schoolId": "school-2"
+    },
+    {
+      "id": "user-4",
+      "name": "Ahmad Ali",
+      "email": "ahmad.ali@student.example.com",
+      "role": "student",
+      "schoolId": "school-1",
+      "grade": 3
+    },
+    {
+      "id": "user-5",
+      "name": "Hassan Malik",
+      "email": "hassan.malik@student.example.com",
+      "role": "student",
+      "schoolId": "school-1",
+      "grade": 4
+    },
+    {
+      "id": "user-6",
+      "name": "Bilal Ahmed",
+      "email": "bilal.ahmed@student.example.com",
+      "role": "student",
+      "schoolId": "school-2",
+      "grade": 5
+    },
+    {
+      "id": "obs-user-1",
+      "name": "Dr. Amina Baloch",
+      "email": "amina.baloch@edu.example.com",
+      "role": "observer",
+      "schoolId": "school-1"
+    },
+    {
+      "id": "obs-user-2",
+      "name": "Rashid Mengal",
+      "email": "rashid.mengal@edu.example.com",
+      "role": "observer",
+      "schoolId": "school-2"
+    },
+    {
+      "id": "user-7",
+      "name": "Nadia Qureshi",
+      "email": "nadia.qureshi@edu.example.com",
+      "role": "teacher",
+      "schoolId": "school-1"
+    },
+    {
+      "id": "user-8",
+      "name": "Imran Shah",
+      "email": "imran.shah@edu.example.com",
+      "role": "teacher",
+      "schoolId": "school-2"
+    }
+  ],
+  "students": [
+    {
+      "id": "user-4",
+      "name": "Ahmad Ali",
+      "grade": 3,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "user-5",
+      "name": "Hassan Malik",
+      "grade": 4,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "user-6",
+      "name": "Bilal Ahmed",
+      "grade": 5,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-1",
+      "name": "Ahmad Ali",
+      "grade": 3,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-2",
+      "name": "Zainab Khan",
+      "grade": 3,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-3",
+      "name": "Hassan Malik",
+      "grade": 4,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-4",
+      "name": "Ayesha Bibi",
+      "grade": 4,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-5",
+      "name": "Bilal Ahmed",
+      "grade": 5,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-6",
+      "name": "Sana Fatima",
+      "grade": 5,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-7",
+      "name": "Usman Tariq",
+      "grade": 1,
+      "schoolId": "school-1",
+      "teacherId": "user-7",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-8",
+      "name": "Maryam Nawaz",
+      "grade": 1,
+      "schoolId": "school-1",
+      "teacherId": "user-7",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-9",
+      "name": "Ali Raza",
+      "grade": 1,
+      "schoolId": "school-2",
+      "teacherId": "user-8",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-10",
+      "name": "Farah Noor",
+      "grade": 2,
+      "schoolId": "school-1",
+      "teacherId": "user-7",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-11",
+      "name": "Kamran Shah",
+      "grade": 2,
+      "schoolId": "school-1",
+      "teacherId": "user-7",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-12",
+      "name": "Hina Aslam",
+      "grade": 2,
+      "schoolId": "school-2",
+      "teacherId": "user-8",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-13",
+      "name": "Tariq Mehmood",
+      "grade": 3,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-14",
+      "name": "Saima Iqbal",
+      "grade": 3,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-15",
+      "name": "Waqas Ali",
+      "grade": 4,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-16",
+      "name": "Rabia Sultana",
+      "grade": 4,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-17",
+      "name": "Naveed Hassan",
+      "grade": 5,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-18",
+      "name": "Asma Khalid",
+      "grade": 5,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-19",
+      "name": "Faisal Rehman",
+      "grade": 1,
+      "schoolId": "school-2",
+      "teacherId": "user-8",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-20",
+      "name": "Nida Yaseen",
+      "grade": 2,
+      "schoolId": "school-2",
+      "teacherId": "user-8",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-21",
+      "name": "Omer Farooq",
+      "grade": 3,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-22",
+      "name": "Mehwish Hayat",
+      "grade": 4,
+      "schoolId": "school-2",
+      "teacherId": "user-3",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-23",
+      "name": "Danish Khan",
+      "grade": 5,
+      "schoolId": "school-1",
+      "teacherId": "user-1",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-24",
+      "name": "Komal Zafar",
+      "grade": 1,
+      "schoolId": "school-1",
+      "teacherId": "user-7",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    },
+    {
+      "id": "student-25",
+      "name": "Shahzad Ahmed",
+      "grade": 2,
+      "schoolId": "school-1",
+      "teacherId": "user-7",
+      "subjects": ["Mathematics", "English", "Urdu"]
+    }
+  ],
+  "assessments": [
+    {
+      "id": "assessment-1",
+      "title": "Grade 3 Mathematics - Basic Addition",
+      "subject": "Mathematics",
+      "grade": 3,
+      "duration": 15,
+      "createdAt": "2025-10-15T10:00:00Z",
+      "createdBy": "user-1",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "What is 5 + 3?",
+          "options": ["6", "7", "8", "9"],
+          "correctAnswer": 2,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "What is 10 + 7?",
+          "options": ["16", "17", "18", "19"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "true-false",
+          "question": "8 + 4 equals 12",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        },
+        {
+          "id": "q4",
+          "type": "short-answer",
+          "question": "What is 15 + 5?",
+          "correctAnswer": "20",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "title": "Grade 3 English - Reading Comprehension",
+      "subject": "English",
+      "grade": 3,
+      "duration": 20,
+      "createdAt": "2025-10-16T09:00:00Z",
+      "createdBy": "user-1",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "What is the opposite of 'big'?",
+          "options": ["large", "small", "huge", "wide"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "Which word means 'to run fast'?",
+          "options": ["walk", "sprint", "sit", "stand"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "true-false",
+          "question": "A cat is an animal",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "assessment-3",
+      "title": "Grade 4 Mathematics - Multiplication",
+      "subject": "Mathematics",
+      "grade": 4,
+      "duration": 20,
+      "createdAt": "2025-10-17T11:00:00Z",
+      "createdBy": "user-1",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "What is 3 x 4?",
+          "options": ["10", "11", "12", "13"],
+          "correctAnswer": 2,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "What is 5 x 6?",
+          "options": ["28", "30", "32", "35"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "short-answer",
+          "question": "What is 7 x 8?",
+          "correctAnswer": "56",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "assessment-4",
+      "title": "Grade 1 Mathematics - Counting Numbers",
+      "subject": "Mathematics",
+      "grade": 1,
+      "duration": 10,
+      "createdAt": "2025-10-18T09:00:00Z",
+      "createdBy": "user-7",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "What number comes after 5?",
+          "options": ["4", "5", "6", "7"],
+          "correctAnswer": 2,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "How many fingers do you have on one hand?",
+          "options": ["3", "4", "5", "6"],
+          "correctAnswer": 2,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "true-false",
+          "question": "2 + 2 = 4",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "assessment-5",
+      "title": "Grade 2 English - Basic Vocabulary",
+      "subject": "English",
+      "grade": 2,
+      "duration": 15,
+      "createdAt": "2025-10-20T10:00:00Z",
+      "createdBy": "user-7",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "What color is the sky?",
+          "options": ["Red", "Green", "Blue", "Yellow"],
+          "correctAnswer": 2,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "A dog says:",
+          "options": ["Meow", "Bark", "Moo", "Quack"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "true-false",
+          "question": "An apple is a fruit",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "assessment-6",
+      "title": "Grade 5 Mathematics - Fractions",
+      "subject": "Mathematics",
+      "grade": 5,
+      "duration": 25,
+      "createdAt": "2025-10-22T11:00:00Z",
+      "createdBy": "user-3",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "What is 1/2 + 1/4?",
+          "options": ["1/2", "3/4", "2/6", "1/4"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "Which fraction is larger: 2/3 or 1/2?",
+          "options": ["2/3", "1/2", "They are equal", "Cannot determine"],
+          "correctAnswer": 0,
+          "points": 10
+        },
+        {
+          "id": "q3",
+          "type": "short-answer",
+          "question": "Simplify 4/8",
+          "correctAnswer": "1/2",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "assessment-7",
+      "title": "Grade 3 Urdu - Basic Reading",
+      "subject": "Urdu",
+      "grade": 3,
+      "duration": 20,
+      "createdAt": "2025-10-25T09:00:00Z",
+      "createdBy": "user-1",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "Which letter comes first in Urdu alphabet?",
+          "options": ["Bay", "Alif", "Jeem", "Dal"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "true-false",
+          "question": "Urdu is written from right to left",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "short-answer",
+          "question": "How many letters are in Urdu alphabet?",
+          "correctAnswer": "38",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "assessment-8",
+      "title": "Grade 4 English - Grammar Basics",
+      "subject": "English",
+      "grade": 4,
+      "duration": 20,
+      "createdAt": "2025-10-28T10:00:00Z",
+      "createdBy": "user-3",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "Which is a noun?",
+          "options": ["Run", "Beautiful", "Book", "Quickly"],
+          "correctAnswer": 2,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "What is the plural of 'child'?",
+          "options": ["Childs", "Children", "Childes", "Child"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "true-false",
+          "question": "'She runs fast' - 'runs' is a verb",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "assessment-9",
+      "title": "Grade 5 Urdu - Comprehension",
+      "subject": "Urdu",
+      "grade": 5,
+      "duration": 25,
+      "createdAt": "2025-11-01T09:00:00Z",
+      "createdBy": "user-3",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "Allama Iqbal is known as:",
+          "options": ["Quaid-e-Azam", "Shair-e-Mashriq", "Baba-e-Urdu", "Maulana"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "type": "true-false",
+          "question": "Pakistan's national language is Urdu",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "short-answer",
+          "question": "Who wrote Shikwa and Jawab-e-Shikwa?",
+          "correctAnswer": "Allama Iqbal",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "assessment-10",
+      "title": "Grade 2 Mathematics - Subtraction",
+      "subject": "Mathematics",
+      "grade": 2,
+      "duration": 15,
+      "createdAt": "2025-11-05T10:00:00Z",
+      "createdBy": "user-7",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "What is 10 - 3?",
+          "options": ["5", "6", "7", "8"],
+          "correctAnswer": 2,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "question": "What is 15 - 8?",
+          "options": ["6", "7", "8", "9"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "true-false",
+          "question": "20 - 5 = 15",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "assessment-11",
+      "title": "Grade 1 Urdu - Letter Recognition",
+      "subject": "Urdu",
+      "grade": 1,
+      "duration": 10,
+      "createdAt": "2025-11-08T09:00:00Z",
+      "createdBy": "user-8",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "Identify the letter 'Bay'",
+          "options": ["Alif", "Bay", "Pay", "Tay"],
+          "correctAnswer": 1,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "type": "true-false",
+          "question": "Alif is the first letter",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "assessment-12",
+      "title": "Grade 4 Urdu - Poetry Appreciation",
+      "subject": "Urdu",
+      "grade": 4,
+      "duration": 20,
+      "createdAt": "2025-11-10T10:00:00Z",
+      "createdBy": "user-1",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "question": "Who wrote 'Lab pe aati hai dua'?",
+          "options": ["Ghalib", "Iqbal", "Mir", "Faiz"],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "type": "true-false",
+          "question": "Poetry is called 'Nazm' in Urdu",
+          "options": ["True", "False"],
+          "correctAnswer": 0,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "type": "short-answer",
+          "question": "What is a 'Ghazal'?",
+          "correctAnswer": "A form of Urdu poetry",
+          "points": 10
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "result-1",
+      "assessmentId": "assessment-1",
+      "studentId": "student-1",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 20,
+      "totalPoints": 25,
+      "percentage": 80,
+      "completedAt": "2025-10-20T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-2",
+      "assessmentId": "assessment-1",
+      "studentId": "student-2",
+      "studentName": "Zainab Khan",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 15,
+      "totalPoints": 25,
+      "percentage": 60,
+      "completedAt": "2025-10-20T10:35:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 2, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-3",
+      "assessmentId": "assessment-2",
+      "studentId": "student-1",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "English",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-10-21T09:25:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-4",
+      "assessmentId": "assessment-3",
+      "studentId": "student-3",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "Mathematics",
+      "score": 15,
+      "totalPoints": 20,
+      "percentage": 75,
+      "completedAt": "2025-10-22T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "54", "isCorrect": false, "points": 0 }
+      ]
+    },
+    {
+      "id": "result-5",
+      "assessmentId": "assessment-3",
+      "studentId": "student-4",
+      "studentName": "Ayesha Bibi",
+      "grade": 4,
+      "subject": "Mathematics",
+      "score": 20,
+      "totalPoints": 20,
+      "percentage": 100,
+      "completedAt": "2025-10-22T11:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "56", "isCorrect": true, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-6",
+      "assessmentId": "assessment-4",
+      "studentId": "student-7",
+      "studentName": "Usman Tariq",
+      "grade": 1,
+      "subject": "Mathematics",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-10-23T10:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-7",
+      "assessmentId": "assessment-4",
+      "studentId": "student-8",
+      "studentName": "Maryam Nawaz",
+      "grade": 1,
+      "subject": "Mathematics",
+      "score": 10,
+      "totalPoints": 15,
+      "percentage": 67,
+      "completedAt": "2025-10-23T10:15:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-8",
+      "assessmentId": "assessment-5",
+      "studentId": "student-10",
+      "studentName": "Farah Noor",
+      "grade": 2,
+      "subject": "English",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-10-25T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-9",
+      "assessmentId": "assessment-5",
+      "studentId": "student-11",
+      "studentName": "Kamran Shah",
+      "grade": 2,
+      "subject": "English",
+      "score": 10,
+      "totalPoints": 15,
+      "percentage": 67,
+      "completedAt": "2025-10-25T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-10",
+      "assessmentId": "assessment-6",
+      "studentId": "student-5",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 25,
+      "totalPoints": 30,
+      "percentage": 83,
+      "completedAt": "2025-10-28T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 10 },
+        { "questionId": "q3", "answer": "1/4", "isCorrect": false, "points": 0 }
+      ]
+    },
+    {
+      "id": "result-11",
+      "assessmentId": "assessment-6",
+      "studentId": "student-6",
+      "studentName": "Sana Fatima",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 30,
+      "totalPoints": 30,
+      "percentage": 100,
+      "completedAt": "2025-10-28T11:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 10 },
+        { "questionId": "q3", "answer": "1/2", "isCorrect": true, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-12",
+      "assessmentId": "assessment-7",
+      "studentId": "student-1",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "Urdu",
+      "score": 15,
+      "totalPoints": 20,
+      "percentage": 75,
+      "completedAt": "2025-10-30T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "36", "isCorrect": false, "points": 0 }
+      ]
+    },
+    {
+      "id": "result-13",
+      "assessmentId": "assessment-7",
+      "studentId": "student-2",
+      "studentName": "Zainab Khan",
+      "grade": 3,
+      "subject": "Urdu",
+      "score": 20,
+      "totalPoints": 20,
+      "percentage": 100,
+      "completedAt": "2025-10-30T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "38", "isCorrect": true, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-14",
+      "assessmentId": "assessment-8",
+      "studentId": "student-3",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "English",
+      "score": 10,
+      "totalPoints": 15,
+      "percentage": 67,
+      "completedAt": "2025-11-01T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-15",
+      "assessmentId": "assessment-8",
+      "studentId": "student-4",
+      "studentName": "Ayesha Bibi",
+      "grade": 4,
+      "subject": "English",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-11-01T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-16",
+      "assessmentId": "assessment-9",
+      "studentId": "student-5",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 25,
+      "totalPoints": 30,
+      "percentage": 83,
+      "completedAt": "2025-11-03T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Iqbal", "isCorrect": false, "points": 0 }
+      ]
+    },
+    {
+      "id": "result-17",
+      "assessmentId": "assessment-9",
+      "studentId": "student-6",
+      "studentName": "Sana Fatima",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 30,
+      "totalPoints": 30,
+      "percentage": 100,
+      "completedAt": "2025-11-03T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Allama Iqbal", "isCorrect": true, "points": 15 }
+      ]
+    },
+    {
+      "id": "result-18",
+      "assessmentId": "assessment-10",
+      "studentId": "student-10",
+      "studentName": "Farah Noor",
+      "grade": 2,
+      "subject": "Mathematics",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-11-06T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-19",
+      "assessmentId": "assessment-10",
+      "studentId": "student-11",
+      "studentName": "Kamran Shah",
+      "grade": 2,
+      "subject": "Mathematics",
+      "score": 10,
+      "totalPoints": 15,
+      "percentage": 67,
+      "completedAt": "2025-11-06T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 2, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-20",
+      "assessmentId": "assessment-11",
+      "studentId": "student-7",
+      "studentName": "Usman Tariq",
+      "grade": 1,
+      "subject": "Urdu",
+      "score": 10,
+      "totalPoints": 10,
+      "percentage": 100,
+      "completedAt": "2025-11-09T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-21",
+      "assessmentId": "assessment-11",
+      "studentId": "student-8",
+      "studentName": "Maryam Nawaz",
+      "grade": 1,
+      "subject": "Urdu",
+      "score": 5,
+      "totalPoints": 10,
+      "percentage": 50,
+      "completedAt": "2025-11-09T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-22",
+      "assessmentId": "assessment-12",
+      "studentId": "student-3",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "Urdu",
+      "score": 20,
+      "totalPoints": 25,
+      "percentage": 80,
+      "completedAt": "2025-11-11T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Poetry form", "isCorrect": false, "points": 0 }
+      ]
+    },
+    {
+      "id": "result-23",
+      "assessmentId": "assessment-12",
+      "studentId": "student-4",
+      "studentName": "Ayesha Bibi",
+      "grade": 4,
+      "subject": "Urdu",
+      "score": 25,
+      "totalPoints": 25,
+      "percentage": 100,
+      "completedAt": "2025-11-11T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "A form of Urdu poetry", "isCorrect": true, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-24",
+      "assessmentId": "assessment-1",
+      "studentId": "student-13",
+      "studentName": "Tariq Mehmood",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 18,
+      "totalPoints": 25,
+      "percentage": 72,
+      "completedAt": "2025-11-15T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 1, "isCorrect": false, "points": 0 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-25",
+      "assessmentId": "assessment-1",
+      "studentId": "student-14",
+      "studentName": "Saima Iqbal",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 22,
+      "totalPoints": 25,
+      "percentage": 88,
+      "completedAt": "2025-11-15T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-26",
+      "assessmentId": "assessment-2",
+      "studentId": "student-2",
+      "studentName": "Zainab Khan",
+      "grade": 3,
+      "subject": "English",
+      "score": 12,
+      "totalPoints": 15,
+      "percentage": 80,
+      "completedAt": "2025-11-16T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-27",
+      "assessmentId": "assessment-2",
+      "studentId": "student-13",
+      "studentName": "Tariq Mehmood",
+      "grade": 3,
+      "subject": "English",
+      "score": 10,
+      "totalPoints": 15,
+      "percentage": 67,
+      "completedAt": "2025-11-16T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 2, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-28",
+      "assessmentId": "assessment-3",
+      "studentId": "student-15",
+      "studentName": "Waqas Ali",
+      "grade": 4,
+      "subject": "Mathematics",
+      "score": 18,
+      "totalPoints": 20,
+      "percentage": 90,
+      "completedAt": "2025-11-18T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "56", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-29",
+      "assessmentId": "assessment-3",
+      "studentId": "student-16",
+      "studentName": "Rabia Sultana",
+      "grade": 4,
+      "subject": "Mathematics",
+      "score": 12,
+      "totalPoints": 20,
+      "percentage": 60,
+      "completedAt": "2025-11-18T11:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": "56", "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-30",
+      "assessmentId": "assessment-6",
+      "studentId": "student-17",
+      "studentName": "Naveed Hassan",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 20,
+      "totalPoints": 30,
+      "percentage": 67,
+      "completedAt": "2025-11-20T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 1, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": "1/2", "isCorrect": true, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-31",
+      "assessmentId": "assessment-6",
+      "studentId": "student-18",
+      "studentName": "Asma Khalid",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 28,
+      "totalPoints": 30,
+      "percentage": 93,
+      "completedAt": "2025-11-20T11:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 10 },
+        { "questionId": "q3", "answer": "1/2", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-32",
+      "assessmentId": "assessment-4",
+      "studentId": "student-9",
+      "studentName": "Ali Raza",
+      "grade": 1,
+      "subject": "Mathematics",
+      "score": 12,
+      "totalPoints": 15,
+      "percentage": 80,
+      "completedAt": "2025-11-22T10:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 1, "isCorrect": false, "points": 2 }
+      ]
+    },
+    {
+      "id": "result-33",
+      "assessmentId": "assessment-4",
+      "studentId": "student-19",
+      "studentName": "Faisal Rehman",
+      "grade": 1,
+      "subject": "Mathematics",
+      "score": 10,
+      "totalPoints": 15,
+      "percentage": 67,
+      "completedAt": "2025-11-22T10:15:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-34",
+      "assessmentId": "assessment-4",
+      "studentId": "student-24",
+      "studentName": "Komal Zafar",
+      "grade": 1,
+      "subject": "Mathematics",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-11-22T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-35",
+      "assessmentId": "assessment-5",
+      "studentId": "student-12",
+      "studentName": "Hina Aslam",
+      "grade": 2,
+      "subject": "English",
+      "score": 13,
+      "totalPoints": 15,
+      "percentage": 87,
+      "completedAt": "2025-11-25T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 1, "isCorrect": false, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-36",
+      "assessmentId": "assessment-5",
+      "studentId": "student-20",
+      "studentName": "Nida Yaseen",
+      "grade": 2,
+      "subject": "English",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-11-25T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-37",
+      "assessmentId": "assessment-5",
+      "studentId": "student-25",
+      "studentName": "Shahzad Ahmed",
+      "grade": 2,
+      "subject": "English",
+      "score": 10,
+      "totalPoints": 15,
+      "percentage": 67,
+      "completedAt": "2025-11-25T11:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-38",
+      "assessmentId": "assessment-7",
+      "studentId": "student-14",
+      "studentName": "Saima Iqbal",
+      "grade": 3,
+      "subject": "Urdu",
+      "score": 18,
+      "totalPoints": 20,
+      "percentage": 90,
+      "completedAt": "2025-11-27T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "38", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-39",
+      "assessmentId": "assessment-7",
+      "studentId": "student-21",
+      "studentName": "Omer Farooq",
+      "grade": 3,
+      "subject": "Urdu",
+      "score": 12,
+      "totalPoints": 20,
+      "percentage": 60,
+      "completedAt": "2025-11-27T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": "40", "isCorrect": false, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-40",
+      "assessmentId": "assessment-8",
+      "studentId": "student-15",
+      "studentName": "Waqas Ali",
+      "grade": 4,
+      "subject": "English",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-11-29T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-41",
+      "assessmentId": "assessment-8",
+      "studentId": "student-16",
+      "studentName": "Rabia Sultana",
+      "grade": 4,
+      "subject": "English",
+      "score": 12,
+      "totalPoints": 15,
+      "percentage": 80,
+      "completedAt": "2025-11-29T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 1, "isCorrect": false, "points": 2 }
+      ]
+    },
+    {
+      "id": "result-42",
+      "assessmentId": "assessment-8",
+      "studentId": "student-22",
+      "studentName": "Mehwish Hayat",
+      "grade": 4,
+      "subject": "English",
+      "score": 13,
+      "totalPoints": 15,
+      "percentage": 87,
+      "completedAt": "2025-11-29T11:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-43",
+      "assessmentId": "assessment-9",
+      "studentId": "student-17",
+      "studentName": "Naveed Hassan",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 22,
+      "totalPoints": 30,
+      "percentage": 73,
+      "completedAt": "2025-12-01T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Iqbal", "isCorrect": false, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-44",
+      "assessmentId": "assessment-9",
+      "studentId": "student-18",
+      "studentName": "Asma Khalid",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 30,
+      "totalPoints": 30,
+      "percentage": 100,
+      "completedAt": "2025-12-01T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Allama Iqbal", "isCorrect": true, "points": 15 }
+      ]
+    },
+    {
+      "id": "result-45",
+      "assessmentId": "assessment-9",
+      "studentId": "student-23",
+      "studentName": "Danish Khan",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 27,
+      "totalPoints": 30,
+      "percentage": 90,
+      "completedAt": "2025-12-01T10:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Allama Iqbal", "isCorrect": true, "points": 12 }
+      ]
+    },
+    {
+      "id": "result-46",
+      "assessmentId": "assessment-10",
+      "studentId": "student-12",
+      "studentName": "Hina Aslam",
+      "grade": 2,
+      "subject": "Mathematics",
+      "score": 13,
+      "totalPoints": 15,
+      "percentage": 87,
+      "completedAt": "2025-12-03T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-47",
+      "assessmentId": "assessment-10",
+      "studentId": "student-20",
+      "studentName": "Nida Yaseen",
+      "grade": 2,
+      "subject": "Mathematics",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-12-03T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-48",
+      "assessmentId": "assessment-10",
+      "studentId": "student-25",
+      "studentName": "Shahzad Ahmed",
+      "grade": 2,
+      "subject": "Mathematics",
+      "score": 8,
+      "totalPoints": 15,
+      "percentage": 53,
+      "completedAt": "2025-12-03T11:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 1, "isCorrect": false, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-49",
+      "assessmentId": "assessment-11",
+      "studentId": "student-9",
+      "studentName": "Ali Raza",
+      "grade": 1,
+      "subject": "Urdu",
+      "score": 8,
+      "totalPoints": 10,
+      "percentage": 80,
+      "completedAt": "2025-12-05T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": false, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-50",
+      "assessmentId": "assessment-11",
+      "studentId": "student-19",
+      "studentName": "Faisal Rehman",
+      "grade": 1,
+      "subject": "Urdu",
+      "score": 10,
+      "totalPoints": 10,
+      "percentage": 100,
+      "completedAt": "2025-12-05T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-51",
+      "assessmentId": "assessment-11",
+      "studentId": "student-24",
+      "studentName": "Komal Zafar",
+      "grade": 1,
+      "subject": "Urdu",
+      "score": 7,
+      "totalPoints": 10,
+      "percentage": 70,
+      "completedAt": "2025-12-05T10:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": false, "points": 2 }
+      ]
+    },
+    {
+      "id": "result-52",
+      "assessmentId": "assessment-12",
+      "studentId": "student-15",
+      "studentName": "Waqas Ali",
+      "grade": 4,
+      "subject": "Urdu",
+      "score": 22,
+      "totalPoints": 25,
+      "percentage": 88,
+      "completedAt": "2025-12-07T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "A form of Urdu poetry", "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-53",
+      "assessmentId": "assessment-12",
+      "studentId": "student-16",
+      "studentName": "Rabia Sultana",
+      "grade": 4,
+      "subject": "Urdu",
+      "score": 18,
+      "totalPoints": 25,
+      "percentage": 72,
+      "completedAt": "2025-12-07T10:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Poetry", "isCorrect": false, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-54",
+      "assessmentId": "assessment-12",
+      "studentId": "student-22",
+      "studentName": "Mehwish Hayat",
+      "grade": 4,
+      "subject": "Urdu",
+      "score": 25,
+      "totalPoints": 25,
+      "percentage": 100,
+      "completedAt": "2025-12-07T11:00:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "A form of Urdu poetry", "isCorrect": true, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-55",
+      "assessmentId": "assessment-6",
+      "studentId": "student-23",
+      "studentName": "Danish Khan",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 25,
+      "totalPoints": 30,
+      "percentage": 83,
+      "completedAt": "2025-12-09T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 10 },
+        { "questionId": "q3", "answer": "1/4", "isCorrect": false, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-56",
+      "assessmentId": "assessment-1",
+      "studentId": "student-21",
+      "studentName": "Omer Farooq",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 20,
+      "totalPoints": 25,
+      "percentage": 80,
+      "completedAt": "2025-12-10T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-57",
+      "assessmentId": "assessment-2",
+      "studentId": "student-14",
+      "studentName": "Saima Iqbal",
+      "grade": 3,
+      "subject": "English",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-12-10T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-58",
+      "assessmentId": "assessment-2",
+      "studentId": "student-21",
+      "studentName": "Omer Farooq",
+      "grade": 3,
+      "subject": "English",
+      "score": 12,
+      "totalPoints": 15,
+      "percentage": 80,
+      "completedAt": "2025-12-10T09:45:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 1, "isCorrect": false, "points": 2 }
+      ]
+    },
+    {
+      "id": "result-u4-1",
+      "assessmentId": "assessment-1",
+      "studentId": "user-4",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 22,
+      "totalPoints": 25,
+      "percentage": 88,
+      "completedAt": "2025-11-15T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-u4-2",
+      "assessmentId": "assessment-2",
+      "studentId": "user-4",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "English",
+      "score": 15,
+      "totalPoints": 15,
+      "percentage": 100,
+      "completedAt": "2025-11-18T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-u4-3",
+      "assessmentId": "assessment-7",
+      "studentId": "user-4",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "Urdu",
+      "score": 16,
+      "totalPoints": 20,
+      "percentage": 80,
+      "completedAt": "2025-11-22T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "38", "isCorrect": true, "points": 6 }
+      ]
+    },
+    {
+      "id": "result-u4-4",
+      "assessmentId": "assessment-1",
+      "studentId": "user-4",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 20,
+      "totalPoints": 25,
+      "percentage": 80,
+      "completedAt": "2025-11-28T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-u4-5",
+      "assessmentId": "assessment-2",
+      "studentId": "user-4",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "English",
+      "score": 12,
+      "totalPoints": 15,
+      "percentage": 80,
+      "completedAt": "2025-12-02T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": false, "points": 0 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-u4-6",
+      "assessmentId": "assessment-7",
+      "studentId": "user-4",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "Urdu",
+      "score": 18,
+      "totalPoints": 20,
+      "percentage": 90,
+      "completedAt": "2025-12-05T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "38", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-u4-7",
+      "assessmentId": "assessment-1",
+      "studentId": "user-4",
+      "studentName": "Ahmad Ali",
+      "grade": 3,
+      "subject": "Mathematics",
+      "score": 23,
+      "totalPoints": 25,
+      "percentage": 92,
+      "completedAt": "2025-12-08T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q4", "answer": "20", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-u5-1",
+      "assessmentId": "assessment-3",
+      "studentId": "user-5",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "Mathematics",
+      "score": 15,
+      "totalPoints": 20,
+      "percentage": 75,
+      "completedAt": "2025-11-10T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "54", "isCorrect": false, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-u5-2",
+      "assessmentId": "assessment-8",
+      "studentId": "user-5",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "English",
+      "score": 12,
+      "totalPoints": 15,
+      "percentage": 80,
+      "completedAt": "2025-11-15T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 1, "isCorrect": false, "points": 2 }
+      ]
+    },
+    {
+      "id": "result-u5-3",
+      "assessmentId": "assessment-12",
+      "studentId": "user-5",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "Urdu",
+      "score": 18,
+      "totalPoints": 25,
+      "percentage": 72,
+      "completedAt": "2025-11-20T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Poetry", "isCorrect": false, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-u5-4",
+      "assessmentId": "assessment-3",
+      "studentId": "user-5",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "Mathematics",
+      "score": 18,
+      "totalPoints": 20,
+      "percentage": 90,
+      "completedAt": "2025-11-25T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "56", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-u5-5",
+      "assessmentId": "assessment-8",
+      "studentId": "user-5",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "English",
+      "score": 13,
+      "totalPoints": 15,
+      "percentage": 87,
+      "completedAt": "2025-11-30T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": 0, "isCorrect": true, "points": 3 }
+      ]
+    },
+    {
+      "id": "result-u5-6",
+      "assessmentId": "assessment-12",
+      "studentId": "user-5",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "Urdu",
+      "score": 22,
+      "totalPoints": 25,
+      "percentage": 88,
+      "completedAt": "2025-12-05T10:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "A form of Urdu poetry", "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-u5-7",
+      "assessmentId": "assessment-3",
+      "studentId": "user-5",
+      "studentName": "Hassan Malik",
+      "grade": 4,
+      "subject": "Mathematics",
+      "score": 17,
+      "totalPoints": 20,
+      "percentage": 85,
+      "completedAt": "2025-12-09T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 2, "isCorrect": true, "points": 5 },
+        { "questionId": "q2", "answer": 1, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "56", "isCorrect": true, "points": 7 }
+      ]
+    },
+    {
+      "id": "result-u6-1",
+      "assessmentId": "assessment-6",
+      "studentId": "user-6",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 25,
+      "totalPoints": 30,
+      "percentage": 83,
+      "completedAt": "2025-11-12T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 10 },
+        { "questionId": "q3", "answer": "1/4", "isCorrect": false, "points": 5 }
+      ]
+    },
+    {
+      "id": "result-u6-2",
+      "assessmentId": "assessment-9",
+      "studentId": "user-6",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 27,
+      "totalPoints": 30,
+      "percentage": 90,
+      "completedAt": "2025-11-18T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Allama Iqbal", "isCorrect": true, "points": 12 }
+      ]
+    },
+    {
+      "id": "result-u6-3",
+      "assessmentId": "assessment-6",
+      "studentId": "user-6",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 28,
+      "totalPoints": 30,
+      "percentage": 93,
+      "completedAt": "2025-11-25T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 10 },
+        { "questionId": "q3", "answer": "1/2", "isCorrect": true, "points": 8 }
+      ]
+    },
+    {
+      "id": "result-u6-4",
+      "assessmentId": "assessment-9",
+      "studentId": "user-6",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 25,
+      "totalPoints": 30,
+      "percentage": 83,
+      "completedAt": "2025-12-01T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Iqbal", "isCorrect": false, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-u6-5",
+      "assessmentId": "assessment-6",
+      "studentId": "user-6",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Mathematics",
+      "score": 30,
+      "totalPoints": 30,
+      "percentage": 100,
+      "completedAt": "2025-12-06T11:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 10 },
+        { "questionId": "q3", "answer": "1/2", "isCorrect": true, "points": 10 }
+      ]
+    },
+    {
+      "id": "result-u6-6",
+      "assessmentId": "assessment-9",
+      "studentId": "user-6",
+      "studentName": "Bilal Ahmed",
+      "grade": 5,
+      "subject": "Urdu",
+      "score": 30,
+      "totalPoints": 30,
+      "percentage": 100,
+      "completedAt": "2025-12-09T09:30:00Z",
+      "status": "completed",
+      "answers": [
+        { "questionId": "q1", "answer": 1, "isCorrect": true, "points": 10 },
+        { "questionId": "q2", "answer": 0, "isCorrect": true, "points": 5 },
+        { "questionId": "q3", "answer": "Allama Iqbal", "isCorrect": true, "points": 15 }
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "obs-1",
+      "teacherId": "user-1",
+      "teacherName": "Sarah Ahmed",
+      "observerId": "obs-user-1",
+      "observerName": "Dr. Amina Baloch",
+      "schoolId": "school-1",
+      "classGrade": 3,
+      "subject": "Mathematics",
+      "observationType": "Formative",
+      "date": "2025-10-15T08:00:00Z",
+      "preObservationNotes": "Observing lesson on basic addition with visual aids",
+      "overallScore": 85,
+      "feedback": "Excellent use of interactive teaching methods. Students were engaged throughout the lesson.",
+      "recommendations": [
+        "Continue using hands-on activities",
+        "Share teaching strategies with colleagues"
+      ],
+      "status": "completed",
+      "createdAt": "2025-10-15T07:30:00Z",
+      "updatedAt": "2025-10-15T09:00:00Z",
+      "indicators": [
+        {
+          "id": "ind-1",
+          "name": "Student Engagement",
+          "score": 9,
+          "maxScore": 10,
+          "notes": "High level of student participation",
+          "timestamp": "08:15"
+        },
+        {
+          "id": "ind-2",
+          "name": "Instructional Clarity",
+          "score": 8,
+          "maxScore": 10,
+          "notes": "Clear explanations and examples",
+          "timestamp": "08:30"
+        },
+        {
+          "id": "ind-3",
+          "name": "Assessment Integration",
+          "score": 9,
+          "maxScore": 10,
+          "notes": "Effective use of formative assessment",
+          "timestamp": "08:45"
+        }
+      ]
+    },
+    {
+      "id": "obs-2",
+      "teacherId": "user-3",
+      "teacherName": "Fatima Hassan",
+      "observerId": "obs-user-2",
+      "observerName": "Rashid Mengal",
+      "schoolId": "school-2",
+      "classGrade": 5,
+      "subject": "English",
+      "observationType": "Baseline",
+      "date": "2025-10-22T09:00:00Z",
+      "preObservationNotes": "First observation for the academic year - focusing on reading comprehension strategies",
+      "overallScore": 72,
+      "feedback": "Good foundation in teaching methodology. Room for improvement in student differentiation.",
+      "recommendations": [
+        "Implement differentiated reading materials",
+        "Increase wait time for student responses",
+        "Use more visual aids for vocabulary"
+      ],
+      "status": "completed",
+      "createdAt": "2025-10-22T08:30:00Z",
+      "updatedAt": "2025-10-22T10:00:00Z",
+      "indicators": [
+        {
+          "id": "ind-1",
+          "name": "Student Engagement",
+          "score": 7,
+          "maxScore": 10,
+          "notes": "Some students appeared disengaged during reading",
+          "timestamp": "09:15"
+        },
+        {
+          "id": "ind-2",
+          "name": "Instructional Clarity",
+          "score": 8,
+          "maxScore": 10,
+          "notes": "Instructions were clear but could be more concise",
+          "timestamp": "09:25"
+        },
+        {
+          "id": "ind-3",
+          "name": "Classroom Management",
+          "score": 7,
+          "maxScore": 10,
+          "notes": "Good overall but transitions could be smoother",
+          "timestamp": "09:40"
+        }
+      ]
+    },
+    {
+      "id": "obs-3",
+      "teacherId": "user-7",
+      "teacherName": "Nadia Qureshi",
+      "observerId": "obs-user-1",
+      "observerName": "Dr. Amina Baloch",
+      "schoolId": "school-1",
+      "classGrade": 1,
+      "subject": "Urdu",
+      "observationType": "Formative",
+      "date": "2025-11-05T08:30:00Z",
+      "preObservationNotes": "Observing letter recognition lesson with Grade 1 students",
+      "overallScore": 90,
+      "feedback": "Outstanding lesson delivery. Teacher shows exceptional skill in early childhood education methods.",
+      "recommendations": [
+        "Document and share best practices",
+        "Consider mentoring new teachers"
+      ],
+      "status": "completed",
+      "createdAt": "2025-11-05T08:00:00Z",
+      "updatedAt": "2025-11-05T09:30:00Z",
+      "indicators": [
+        {
+          "id": "ind-1",
+          "name": "Student Engagement",
+          "score": 10,
+          "maxScore": 10,
+          "notes": "All students fully engaged through songs and activities",
+          "timestamp": "08:40"
+        },
+        {
+          "id": "ind-2",
+          "name": "Instructional Clarity",
+          "score": 9,
+          "maxScore": 10,
+          "notes": "Age-appropriate language and clear demonstrations",
+          "timestamp": "08:55"
+        },
+        {
+          "id": "ind-3",
+          "name": "Learning Environment",
+          "score": 9,
+          "maxScore": 10,
+          "notes": "Warm and supportive classroom atmosphere",
+          "timestamp": "09:10"
+        }
+      ]
+    },
+    {
+      "id": "obs-4",
+      "teacherId": "user-8",
+      "teacherName": "Imran Shah",
+      "observerId": "obs-user-2",
+      "observerName": "Rashid Mengal",
+      "schoolId": "school-2",
+      "classGrade": 2,
+      "subject": "Mathematics",
+      "observationType": "Summative",
+      "date": "2025-11-18T10:00:00Z",
+      "preObservationNotes": "End of unit assessment observation - subtraction concepts",
+      "overallScore": 78,
+      "feedback": "Solid teaching performance with good use of manipulatives. Student progress evident.",
+      "recommendations": [
+        "Incorporate more peer learning activities",
+        "Develop extension activities for advanced students"
+      ],
+      "status": "completed",
+      "createdAt": "2025-11-18T09:30:00Z",
+      "updatedAt": "2025-11-18T11:00:00Z",
+      "indicators": [
+        {
+          "id": "ind-1",
+          "name": "Student Engagement",
+          "score": 8,
+          "maxScore": 10,
+          "notes": "Most students actively participating",
+          "timestamp": "10:15"
+        },
+        {
+          "id": "ind-2",
+          "name": "Assessment Integration",
+          "score": 8,
+          "maxScore": 10,
+          "notes": "Good use of informal assessment throughout",
+          "timestamp": "10:30"
+        },
+        {
+          "id": "ind-3",
+          "name": "Differentiation",
+          "score": 7,
+          "maxScore": 10,
+          "notes": "Some differentiation but could be more targeted",
+          "timestamp": "10:45"
+        }
+      ]
+    },
+    {
+      "id": "obs-5",
+      "teacherId": "user-1",
+      "teacherName": "Sarah Ahmed",
+      "observerId": "obs-user-1",
+      "observerName": "Dr. Amina Baloch",
+      "schoolId": "school-1",
+      "classGrade": 4,
+      "subject": "English",
+      "observationType": "Formative",
+      "date": "2025-11-28T09:00:00Z",
+      "preObservationNotes": "Grammar lesson focusing on nouns and verbs",
+      "overallScore": 88,
+      "feedback": "Excellent lesson structure with creative activities. Students demonstrated strong understanding.",
+      "recommendations": [
+        "Continue excellent work",
+        "Consider adding more writing practice"
+      ],
+      "status": "completed",
+      "createdAt": "2025-11-28T08:30:00Z",
+      "updatedAt": "2025-11-28T10:00:00Z",
+      "indicators": [
+        {
+          "id": "ind-1",
+          "name": "Student Engagement",
+          "score": 9,
+          "maxScore": 10,
+          "notes": "High engagement with grammar games",
+          "timestamp": "09:15"
+        },
+        {
+          "id": "ind-2",
+          "name": "Instructional Clarity",
+          "score": 9,
+          "maxScore": 10,
+          "notes": "Clear explanations with relevant examples",
+          "timestamp": "09:30"
+        },
+        {
+          "id": "ind-3",
+          "name": "Assessment Integration",
+          "score": 8,
+          "maxScore": 10,
+          "notes": "Good formative checks throughout lesson",
+          "timestamp": "09:45"
+        }
+      ]
+    },
+    {
+      "id": "obs-6",
+      "teacherId": "user-3",
+      "teacherName": "Fatima Hassan",
+      "observerId": "obs-user-2",
+      "observerName": "Rashid Mengal",
+      "schoolId": "school-2",
+      "classGrade": 5,
+      "subject": "Urdu",
+      "observationType": "Formative",
+      "date": "2025-12-05T08:30:00Z",
+      "preObservationNotes": "Poetry appreciation lesson - Allama Iqbal's works",
+      "overallScore": 82,
+      "feedback": "Engaging lesson with good cultural connections. Students showed appreciation for poetry.",
+      "recommendations": [
+        "Incorporate more recitation practice",
+        "Add creative writing extension activities"
+      ],
+      "status": "completed",
+      "createdAt": "2025-12-05T08:00:00Z",
+      "updatedAt": "2025-12-05T09:30:00Z",
+      "indicators": [
+        {
+          "id": "ind-1",
+          "name": "Student Engagement",
+          "score": 8,
+          "maxScore": 10,
+          "notes": "Students engaged during recitation",
+          "timestamp": "08:45"
+        },
+        {
+          "id": "ind-2",
+          "name": "Content Knowledge",
+          "score": 9,
+          "maxScore": 10,
+          "notes": "Teacher demonstrated deep knowledge of poetry",
+          "timestamp": "09:00"
+        },
+        {
+          "id": "ind-3",
+          "name": "Cultural Connections",
+          "score": 8,
+          "maxScore": 10,
+          "notes": "Good connections to Pakistani history and culture",
+          "timestamp": "09:15"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "totalStudents": 25,
+    "totalAssessments": 12,
+    "averageScore": 82,
+    "completionRate": 85,
+    "recentActivity": [
+      {
+        "id": "act-1",
+        "type": "assessment",
+        "description": "Ahmad Ali completed Mathematics Assessment",
+        "timestamp": "2025-12-10T10:30:00Z",
+        "userId": "student-1",
+        "userName": "Ahmad Ali"
+      },
+      {
+        "id": "act-2",
+        "type": "assessment",
+        "description": "Saima Iqbal completed English Assessment",
+        "timestamp": "2025-12-10T09:30:00Z",
+        "userId": "student-14",
+        "userName": "Saima Iqbal"
+      },
+      {
+        "id": "act-3",
+        "type": "assessment",
+        "description": "Omer Farooq completed English Assessment",
+        "timestamp": "2025-12-10T09:45:00Z",
+        "userId": "student-21",
+        "userName": "Omer Farooq"
+      },
+      {
+        "id": "act-4",
+        "type": "assessment",
+        "description": "Danish Khan completed Mathematics Assessment",
+        "timestamp": "2025-12-09T11:30:00Z",
+        "userId": "student-23",
+        "userName": "Danish Khan"
+      },
+      {
+        "id": "act-5",
+        "type": "assessment",
+        "description": "Mehwish Hayat completed Urdu Assessment",
+        "timestamp": "2025-12-07T11:00:00Z",
+        "userId": "student-22",
+        "userName": "Mehwish Hayat"
+      },
+      {
+        "id": "act-6",
+        "type": "observation",
+        "description": "Classroom observation completed for Fatima Hassan",
+        "timestamp": "2025-12-05T09:30:00Z",
+        "userId": "user-3",
+        "userName": "Fatima Hassan"
+      },
+      {
+        "id": "act-7",
+        "type": "assessment",
+        "description": "Komal Zafar completed Urdu Assessment",
+        "timestamp": "2025-12-05T10:00:00Z",
+        "userId": "student-24",
+        "userName": "Komal Zafar"
+      },
+      {
+        "id": "act-8",
+        "type": "assessment",
+        "description": "Faisal Rehman completed Urdu Assessment",
+        "timestamp": "2025-12-05T09:45:00Z",
+        "userId": "student-19",
+        "userName": "Faisal Rehman"
+      },
+      {
+        "id": "act-9",
+        "type": "assessment",
+        "description": "Shahzad Ahmed completed Mathematics Assessment",
+        "timestamp": "2025-12-03T11:00:00Z",
+        "userId": "student-25",
+        "userName": "Shahzad Ahmed"
+      },
+      {
+        "id": "act-10",
+        "type": "assessment",
+        "description": "Nida Yaseen completed Mathematics Assessment",
+        "timestamp": "2025-12-03T10:45:00Z",
+        "userId": "student-20",
+        "userName": "Nida Yaseen"
+      },
+      {
+        "id": "act-11",
+        "type": "assessment",
+        "description": "Hina Aslam completed Mathematics Assessment",
+        "timestamp": "2025-12-03T10:30:00Z",
+        "userId": "student-12",
+        "userName": "Hina Aslam"
+      },
+      {
+        "id": "act-12",
+        "type": "assessment",
+        "description": "Danish Khan completed Urdu Assessment",
+        "timestamp": "2025-12-01T10:00:00Z",
+        "userId": "student-23",
+        "userName": "Danish Khan"
+      },
+      {
+        "id": "act-13",
+        "type": "assessment",
+        "description": "Asma Khalid completed Urdu Assessment",
+        "timestamp": "2025-12-01T09:45:00Z",
+        "userId": "student-18",
+        "userName": "Asma Khalid"
+      },
+      {
+        "id": "act-14",
+        "type": "observation",
+        "description": "Classroom observation completed for Sarah Ahmed",
+        "timestamp": "2025-11-28T10:00:00Z",
+        "userId": "user-1",
+        "userName": "Sarah Ahmed"
+      },
+      {
+        "id": "act-15",
+        "type": "assessment",
+        "description": "Mehwish Hayat completed English Assessment",
+        "timestamp": "2025-11-29T11:00:00Z",
+        "userId": "student-22",
+        "userName": "Mehwish Hayat"
+      },
+      {
+        "id": "act-16",
+        "type": "assessment",
+        "description": "Rabia Sultana completed English Assessment",
+        "timestamp": "2025-11-29T10:45:00Z",
+        "userId": "student-16",
+        "userName": "Rabia Sultana"
+      },
+      {
+        "id": "act-17",
+        "type": "assessment",
+        "description": "Omer Farooq completed Urdu Assessment",
+        "timestamp": "2025-11-27T09:45:00Z",
+        "userId": "student-21",
+        "userName": "Omer Farooq"
+      },
+      {
+        "id": "act-18",
+        "type": "assessment",
+        "description": "Saima Iqbal completed Urdu Assessment",
+        "timestamp": "2025-11-27T09:30:00Z",
+        "userId": "student-14",
+        "userName": "Saima Iqbal"
+      },
+      {
+        "id": "act-19",
+        "type": "observation",
+        "description": "Classroom observation completed for Imran Shah",
+        "timestamp": "2025-11-18T11:00:00Z",
+        "userId": "user-8",
+        "userName": "Imran Shah"
+      },
+      {
+        "id": "act-20",
+        "type": "login",
+        "description": "Admin logged in to review system analytics",
+        "timestamp": "2025-12-10T08:00:00Z",
+        "userId": "user-2",
+        "userName": "Ali Khan"
+      }
+    ]
+  }
+}
+
+

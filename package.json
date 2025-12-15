@@ -1,0 +1,49 @@
+{
+  "name": "assessment-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:seed": "npx tsx prisma/seed.ts",
+    "db:migrate": "npx prisma migrate dev",
+    "db:studio": "npx prisma studio",
+    "docs:screenshots": "node scripts/capture-admin-screenshots.js"
+  },
+  "prisma": {
+    "seed": "npx tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "@prisma/adapter-libsql": "^7.1.0",
+    "@prisma/client": "^7.1.0",
+    "@types/react-csv": "^1.1.10",
+    "@types/string-similarity": "^4.0.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.4",
+    "next": "^16.0.7",
+    "prisma": "^7.1.0",
+    "react": "^19.2.0",
+    "react-csv": "^2.2.2",
+    "react-dom": "^19.2.0",
+    "recharts": "^3.5.1",
+    "string-similarity": "^4.0.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.2.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.7",
+    "puppeteer": "^24.33.0",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}

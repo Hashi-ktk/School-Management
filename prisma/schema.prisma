@@ -1,0 +1,281 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// User model - teachers, admins, students, observers
+model User {
+  id        String  @id
+  name      String
+  email     String  @unique
+  role      String  // 'teacher' | 'admin' | 'student' | 'observer'
+  schoolId  String?
+  grade     Int?
+
+  // Relations
+  students              Student[]             @relation("TeacherStudents")
+  assessmentsCreated    Assessment[]          @relation("AssessmentCreator")
+  teacherObservations   ClassroomObservation[] @relation("ObservedTeacher")
+  conductedObservations ClassroomObservation[] @relation("Observer")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Student model - separate from User for detailed student tracking
+model Student {
+  id        String  @id
+  name      String
+  grade     Int
+  schoolId  String
+  teacherId String
+  avatar    String?
+
+  // Relations
+  teacher   User    @relation("TeacherStudents", fields: [teacherId], references: [id])
+  subjects  StudentSubject[]
+  results   AssessmentResult[]
+  feedbacks StudentFeedback[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Student subjects (many-to-many relationship)
+model StudentSubject {
+  id        String  @id @default(cuid())
+  studentId String
+  subject   String  // 'Mathematics' | 'English' | 'Urdu'
+
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, subject])
+}
+
+// Assessment model
+model Assessment {
+  id        String   @id
+  title     String
+  subject   String   // 'Mathematics' | 'English' | 'Urdu'
+  grade     Int
+  duration  Int      // in minutes
+  createdBy String
+  createdAt DateTime @default(now())
+
+  // Relations
+  creator   User       @relation("AssessmentCreator", fields: [createdBy], references: [id])
+  questions Question[]
+  results   AssessmentResult[]
+
+  updatedAt DateTime @updatedAt
+}
+
+// Question model - nested within Assessment
+model Question {
+  id                    String  @id
+  assessmentId          String
+  type                  String  // 'multiple-choice' | 'true-false' | 'short-answer'
+  question              String
+  options               String? // JSON array stored as string
+  correctAnswer         String  // Can be number (index) or string
+  points                Int
+  hint                  String?
+  fuzzyMatchingEnabled  Boolean @default(false)
+  similarityThreshold   Float?
+  orderIndex            Int     @default(0)
+
+  // Relations
+  assessment Assessment @relation(fields: [assessmentId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Assessment Result model
+model AssessmentResult {
+  id           String   @id
+  assessmentId String
+  studentId    String
+  studentName  String
+  grade        Int
+  subject      String
+  score        Int
+  totalPoints  Int
+  percentage   Float
+  completedAt  DateTime
+  status       String   // 'completed' | 'in-progress'
+
+  // Relations
+  assessment Assessment @relation(fields: [assessmentId], references: [id])
+  student    Student    @relation(fields: [studentId], references: [id])
+  answers    Answer[]
+  feedback   StudentFeedback?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Answer model - nested within AssessmentResult
+model Answer {
+  id              String  @id @default(cuid())
+  resultId        String
+  questionId      String
+  answer          String  // Can be number or string
+  isCorrect       Boolean
+  points          Int
+  similarityScore Float?
+  matchingMethod  String? // 'exact' | 'fuzzy' | 'none'
+
+  // Relations
+  result AssessmentResult @relation(fields: [resultId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+// Classroom Observation model
+model ClassroomObservation {
+  id                   String   @id
+  teacherId            String
+  teacherName          String
+  observerId           String
+  observerName         String
+  schoolId             String
+  classGrade           Int
+  subject              String
+  observationType      String   // 'Baseline' | 'Formative' | 'Summative'
+  date                 DateTime
+  preObservationNotes  String?
+  overallScore         Int
+  feedback             String
+  recommendations      String?  // JSON array stored as string
+  status               String   // 'draft' | 'completed'
+
+  // Relations
+  teacher    User                   @relation("ObservedTeacher", fields: [teacherId], references: [id])
+  observer   User                   @relation("Observer", fields: [observerId], references: [id])
+  indicators ObservationIndicator[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Observation Indicator model
+model ObservationIndicator {
+  id            String  @id
+  observationId String
+  name          String
+  score         Int
+  maxScore      Int
+  notes         String
+  timestamp     String?
+
+  // Relations
+  observation ClassroomObservation @relation(fields: [observationId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+// Student Feedback model - personalized feedback for assessment results
+model StudentFeedback {
+  id               String   @id
+  resultId         String   @unique
+  studentId        String
+  generatedAt      DateTime
+  mainMessage      String
+  encouragement    String
+  nextSteps        String   // JSON array stored as string
+  strengthAreas    String   // JSON array stored as string
+  improvementAreas String   // JSON array stored as string
+  subjectTip       String
+  performanceTier  String
+
+  // Relations
+  result  AssessmentResult @relation(fields: [resultId], references: [id], onDelete: Cascade)
+  student Student          @relation(fields: [studentId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Activity model - for tracking recent activities
+// Note: userId may reference users OR students, so no foreign key constraint
+model Activity {
+  id          String   @id
+  type        String   // 'assessment' | 'observation' | 'login'
+  description String
+  timestamp   DateTime
+  userId      String   // Can reference user or student (no FK constraint)
+  userName    String
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+// Feedback Templates - stored in database instead of JSON
+model ObservationTemplate {
+  id              String @id
+  name            String
+  scoreRangeMin   Int
+  scoreRangeMax   Int
+  feedback        String
+  strengths       String // JSON array stored as string
+  recommendations String // JSON array stored as string
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Indicator templates for observations
+model IndicatorTemplate {
+  id          String @id
+  name        String
+  description String
+  maxScore    Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Student Feedback Templates
+model FeedbackTemplate {
+  id            String @id
+  tierId        String // 'excellent' | 'good' | 'satisfactory' | 'needs-improvement' | 'requires-support'
+  tierName      String
+  scoreRangeMin Int
+  scoreRangeMax Int
+  message       String
+  encouragement String
+  nextSteps     String // JSON array stored as string
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Question Type Analysis templates
+model QuestionTypeAnalysis {
+  id           String @id @default(cuid())
+  questionType String @unique // 'multipleChoice' | 'trueFalse' | 'shortAnswer'
+  strength     String
+  weakness     String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Subject-specific tips
+model SubjectTip {
+  id        String @id @default(cuid())
+  subject   String @unique // 'Mathematics' | 'English' | 'Urdu'
+  general   String
+  lowScore  String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
